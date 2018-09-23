@@ -1,4 +1,4 @@
-package com.handson.sqllite.config;
+package br.com.handson.musicas.config;
 
 import java.sql.Types;
 

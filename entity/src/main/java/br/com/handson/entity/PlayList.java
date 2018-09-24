@@ -12,7 +12,7 @@ public class PlayList {
     private String id;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "PlaylistMusicas")
+    @JoinTable(name = "PlaylistMusicas", joinColumns = @JoinColumn(name = "PlaylistId"), inverseJoinColumns = @JoinColumn(name = "MusicaId"))
     private List<Musica> musicas = new ArrayList<>();
 
     public String getId() {

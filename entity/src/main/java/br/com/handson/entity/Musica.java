@@ -17,8 +17,6 @@ public class Musica implements Serializable {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ArtistaId", referencedColumnName = "id")
-//    @JoinColumn(name = "id")
-//    @Column(name = "ArtistaId")
     private Artista artista;
 
     public Artista getArtista() {

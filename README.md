@@ -1,7 +1,10 @@
-# Projeto contem as configs necessarias para utilizar a base de dados disponbilizada no projeto MyMusic
+A aplicacao esta preparada para fazer deploy em docker,
+basta executar o comando  **mvn clean install dockerfile:build** na raiz de cada projeto
 
-# Para iniciar o desenvolvimento, favor realizar um fork da branch "master" com a seguinte estrutura de nome:
 
-# desafio-mymusic-<nome_usuario_github> aonde <nome_usuario_github> e o usuario do candidato logado no github
+A documentacao do projeto foi feita no swagger basta acessar **http://{IP}}:8080/api/swagger-ui.html**
 
-# Os commits devem ser feitos neste fork para que possam ser avaliados
+Foram liberadas a ulr do prometheus e actuator para as aplicacoes seja monitorada pelo propio promehtues e um grafana
+
+
+Para logs, interessante centralizar os logs com  filebeats com logstash.
